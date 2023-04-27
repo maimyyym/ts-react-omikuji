@@ -1,13 +1,19 @@
 import React from "react";
-import useDrawOmikuji from "../../hooks/useDrawOmikuji";
 
+import { OmikujiResult as OmikujiResultType } from '../../hooks/useDrawOmikuji';
 
-const OmikujiText: React.FC = () => {
+// プロパティの型を定義
+type OmikujiResultProps = {
+  result: OmikujiResultType | '';
+}
 
-  const { result } = useDrawOmikuji();
+const OmikujiText: React.FC<OmikujiResultProps> = ({ result }) => {
 
   return (
-    <p>{result}</p>
+    <div className="omikuji_result">
+      <p className="result_text">{result}</p>
+      </div>
+
   );
 }
 
