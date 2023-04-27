@@ -7,7 +7,7 @@ type OmikujiResultProps = {
   result: OmikujiResultType | "";
 };
 
-const OmikujiText: React.FC<OmikujiResultProps> = ({ result }) => {
+const OmikujiText: React.VFC<OmikujiResultProps> = ({ result }) => {
   return (
     <div className="omikuji_result">
       <p className="result_text">{result}</p>
