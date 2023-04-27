@@ -1,5 +1,5 @@
-import React from 'react';
-import OmikujiBox from './elements/OmikujiBox';
+import React from "react";
+import OmikujiBox from "./elements/OmikujiBox";
 
 function App() {
   return (
