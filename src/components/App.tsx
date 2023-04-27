@@ -1,7 +1,7 @@
 import React from "react";
 import OmikujiBox from "./elements/OmikujiBox";
 
-function App() {
+const App: React.VFC = () => {
   return (
     <div className="App">
       <OmikujiBox />
