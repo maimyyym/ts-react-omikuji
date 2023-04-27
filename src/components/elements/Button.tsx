@@ -9,11 +9,13 @@ type Props = {
 };
 
 const Button: React.VFC<Props> = ({ onClick, isDrawing, children }) => {
-   return (
-     <div>
-       <button className="button" onClick={onClick} disabled={isDrawing}>{children}</button>
-     </div>
-   );
- }
+  return (
+    <div>
+      <button className="button" onClick={onClick} disabled={isDrawing}>
+        {children}
+      </button>
+    </div>
+  );
+};
 
- export default Button;
+export default Button;
