@@ -1,4 +1,5 @@
 import React from "react";
+
 import { OmikujiResult as OmikujiResultType } from '../../hooks/useDrawOmikuji';
 
 // プロパティの型を定義
@@ -12,6 +13,7 @@ const OmikujiText: React.FC<OmikujiResultProps> = ({ result }) => {
     <div className="omikuji_result">
       <p className="result_text">{result}</p>
       </div>
+
   );
 }
 

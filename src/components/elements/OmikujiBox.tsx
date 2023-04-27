@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./Button";
 import OmikujiText from "./OmikujiText";
 import useDrawOmikuji from "../../hooks/useDrawOmikuji";
+
 import "../../styles/style.css";
 
 
